@@ -2,29 +2,32 @@ import {Link} from 'react-router-dom'
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg text-xl font-mono border-b-slate-200 border-b-2" style={{backgroundColor: "#61C0BF"}}>
             <a className="navbar-brand ms-3">
                 <Link to="/" className="nav-link">
-                    Home
+                    SEME
                 </Link>
             </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ms-auto">
-                    <li className="nav-items">
-                        <Link className="nav-link" to="/entry"> 
-                            Entry
-                        </Link>
-                    </li>
-                    <li className="nav-items">
-                        <Link className="nav-link" to="/exit">
-                            <a >Exit</a>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+            <a className="nav-items ms-auto mr-10">
+                <Link className="nav-link" to="/entry"> 
+                    Entry
+                </Link>
+            </a>
+            <a className="nav-items mr-10">
+                <Link className="nav-link" to="/exit">
+                    Exit
+                </Link>
+            </a>
+            <a className="nav-items mr-10">
+                <Link className="nav-link" to="/exit">
+                    Check
+                </Link>
+            </a>
+            <a className="nav-items mr-10">
+                <Link className="nav-link" to="/credits">
+                    Credits
+                </Link>
+            </a>
         </nav>
     ); 
 }
