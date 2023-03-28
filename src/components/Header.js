@@ -23,11 +23,6 @@ function Navbar() {
                     Check
                 </Link>
             </a>
-            <a className="nav-items mr-10">
-                <Link className="nav-link" to="/credits">
-                    Credits
-                </Link>
-            </a>
         </nav>
     ); 
 }
